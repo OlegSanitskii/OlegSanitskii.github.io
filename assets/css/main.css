@@ -1,0 +1,114 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 40px;
+    background-color: #FAFAFA;
+    color: #333;
+}
+
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 220px;
+    height: auto;
+    border-radius: 50%;
+    align-self: center;
+    margin: 20px 0;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #003875;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto; /* Center main content horizontally */
+    max-width: 960px; /* Control width of main content */
+}
+
+section {
+    width: 100%; /* Full width of main container */
+    max-width: 800px; /* Control width of text in sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: justify; /* Optional: justify text for better alignment */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 960px; /* Align footer width with main content width */
+    box-sizing: border-box;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on scroll */
+    z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+    background-color: #003875;
+}
+
+@media (max-width: 768px) {
+    header, nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
