@@ -1,22 +1,24 @@
 body {
-    background-image: url('../img/background.png');
-    background-size: cover; /* Adjusts the size of the background image */
+    background-image: url('../img/background1.webp');
+    background-size:  contain, cover;
     background-repeat: no-repeat; /* Prevents the background image from repeating */
     font-family: 'Roboto', sans-serif;
     margin: 40px;
-    background-color: #FAFAFA;
+    background-color: #DCDCDC;
     color: #333;
 }
 
 header {
-    background-color:  #F5F5DC;
+    background-color: #F5F5DC;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
 }
 
 header img {
@@ -24,7 +26,7 @@ header img {
     height: auto;
     border-radius: 10%;
     align-self: center;
-    margin: 20px 0;
+    margin: 20px 45px;
 }
 
 nav {
