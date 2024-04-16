@@ -1,4 +1,7 @@
 body {
+    background-image: url('../img/background.png');
+    background-size: cover; /* Adjusts the size of the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
     font-family: 'Roboto', sans-serif;
     margin: 40px;
     background-color: #FAFAFA;
@@ -6,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #FFFFFF;
+    background-color: #D3D3D3;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
     padding: 20px;
@@ -52,7 +55,7 @@ nav ul li a:hover {
 }
 
 h1, h2 {
-    color: #0056b3;
+    color: #8B4513;
 }
 
 main {
@@ -74,11 +77,13 @@ section {
 }
 
 footer {
+    background-image: url("../img/footer.jpg");
+    background-size: cover;
+    background-position: bottom;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
     width: 100%;
-    max-width: 960px; /* Align footer width with main content width */
     box-sizing: border-box;
 }
 
