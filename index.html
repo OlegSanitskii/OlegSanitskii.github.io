@@ -23,13 +23,31 @@
 
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a>
+                <ul>
+                    <li><a href="https://comp2139-assignment2.azurewebsites.net/" class="nav-link">Travel Management System</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#education" class="nav-link">Education</a>
+                <ul>
+                    <li><a href = "assets/img/blank.pdf">Dean's Honour List</a></li>
+                    <li><a href = "assets/img/AcademicTranscipt.pdf">Academic Transcript</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact" class="nav-link">Contact Me</a>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:olegsanitskii@gmail.com">olegsanitskii@gmail.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/oleg-sanitskii-6a21b02aa/">Oleg Sanitskii</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/OlegSanitskii">Oleg Sanitskii</a></li>
+                </ul>
+
+            </li>
         </ul>
     </nav>
+
 
 
     <section id="about">
@@ -43,7 +61,7 @@
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
+        <ul class="custom-bullet">
             <li><strong>Languages:</strong> C#, Python, Java, PHP, HTML, CSS, JavaScript</li>
             <li><strong>Frameworks/Technologies:</strong> ASP.NET MVC</li>
             <li><strong>Tools:</strong> Git, WebStorm, PhpStorm, IntelliJ IDEA, Visual studio 2022</li>
@@ -67,7 +85,7 @@
             interactive user interface for seamless navigation and operation.
         </p>
 
-        <ul>
+        <ul class="custom-bullet-blue">
             <li>- Implement a booking interface where users can select and confirm their bookings</li>
             <li> - Provide a summary page or confirmation screen with all booking details.</li>
             <li> - Allow guest users (non-registered) to make bookings.</li>
@@ -79,10 +97,15 @@
         </ul>
 
 
-        <p><strong>Technologies used:</strong>  C#, ASP.NET Core Identity, ASP.NET Core Identity UI, Microsoft SQL Server database,
-            Microsoft Azure, MailGun  </p>
-        <p><strong>Role:</strong> Developer</p>
-
+        <p><strong>Technologies used:</strong>
+        <ul class="custom-bullet">
+            <li>C#</li>
+            <li>ASP.NET Core Identity</li>
+            <li>ASP.NET Core Identity UI</li>
+            <li> Microsoft SQL Server database</li>
+            <li>Microsoft Azure</li>
+            <li>MailGun</li>
+        </ul>
 
         <br>
         <br>
@@ -96,7 +119,7 @@
             Reservation contains flight and passenger information. It also contains the travel date.
             It calculates the total fare payable based on the flight fare and taxes..</p>
 
-            <ul>
+            <ul class="custom-bullet-blue">
                 <li>- Accept travel related information.</li>
                 <li> - Store the travel related information.</li>
                 <li> - Display a ticket based on the travel reservation details.</li>
@@ -104,7 +127,7 @@
 
 
         <p><strong>Technologies used:</strong>  Java, JavaFX </p>
-        <p><strong>Role:</strong> Developer</p>
+
     </section>
 
     <section id="education">
@@ -112,7 +135,7 @@
         <p><strong>Degree:</strong> <a href="https://www.georgebrown.ca/programs/computer-programming-and-analysis-program-online-t197">
             Advanced Diploma – George Brown College</a></p>
 
-            <ul>
+            <ul class="custom-bullet">
                 <li>  Full-Stack Web Development</li>
                 <li>  Database Administration and Architecture</li>
                 <li>  IT and Networking</li>
@@ -139,7 +162,7 @@
         <br>
         <br>
 
-        <ul>
+        <ul class="custom-bullet">
             <li><strong>Email:</strong> <a href="mailto:olegsanitskii@gmail.com">olegsanitskii@gmail.com</a></li>
             <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/oleg-sanitskii-6a21b02aa/">Oleg Sanitskii</a></li>
             <li><strong>GitHub:</strong> <a href="https://github.com/OlegSanitskii">Oleg Sanitskii</a></li>
@@ -166,6 +189,29 @@
             mybutton.style.display = "none";
         }
     }
+
+
+
+
+    window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const id = section.getAttribute('id');
+
+            if (rect.top <= 50 && rect.bottom >= 50) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${id}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    });
+
 </script>
 
 </body>
