@@ -1,7 +1,9 @@
+/*
+
 body {
     background-image: url('../img/background1.webp');
     background-size:  contain, cover;
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     margin: 40px;
     background-color: #DCDCDC;
@@ -65,17 +67,17 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    margin: 20px auto; /* Center main content horizontally */
-    max-width: 960px; /* Control width of main content */
+    margin: 20px auto;
+    max-width: 960px;
 }
 
 section {
-    width: 100%; /* Full width of main container */
-    max-width: 800px; /* Control width of text in sections */
+    width: 100%;
+    max-width: 800px;
     padding: 20px;
     margin-bottom: 20px;
     box-sizing: border-box;
-    text-align: justify; /*  justify text for better alignment */
+    text-align: justify;
 }
 
 footer {
@@ -101,8 +103,121 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: none; /* Hidden by default, shown on scroll */
+    display: none;
     z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+    background-color: #003875;
+}
+
+@media (max-width: 768px) {
+    header, nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+ */
+
+body {
+    background-image: url('../img/background1.webp');
+    background-size: cover; /* Ensure the background covers the entire screen */
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Remove default margin */
+    background-color: #f5f5f5; /* Softer background color */
+    color: #333;
+}
+
+header {
+    background-color: #fff; /* White background for better contrast */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+}
+
+header img {
+    width: 100px; /* Smaller image for better balance */
+    height: auto;
+    border-radius: 50%; /* Circle image for a more modern look */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* More space between links */
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #003875;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 960px;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    border-bottom: 1px solid #eee; /* Separator between sections */
+}
+
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 #scrollTopBtn:hover {
