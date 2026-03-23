@@ -3,218 +3,952 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oleg Sanitskii | Software Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Oleg Sanitskii portfolio — software development projects, academic work, technical skills, and contact information.">
+    <title>Oleg Sanitskii | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<header >
-    <div>
-        <h1>Welcome to My Portfolio</h1>
-        <h2>Oleg Sanitskii | Software Developer</h2>
+    <div class="aurora" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-    <img src="assets/img/mypicture.jpg" alt="Oleg Sanitskii">
 
-</header>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#top">OS</a>
 
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
 
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#about"><i class="fa-solid fa-user"></i><span>About</span></a>
+                <a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i><span>Skills</span></a>
+                <a href="#work"><i class="fa-solid fa-code"></i><span>Work Samples</span></a>
+                <a href="#capstone"><i class="fa-solid fa-diagram-project"></i><span>Featured Project</span></a>
+                <a href="#credentials"><i class="fa-solid fa-graduation-cap"></i><span>Education</span></a>
+                <a href="#references"><i class="fa-solid fa-user-group"></i><span>References</span></a>
+                <a href="#volunteer"><i class="fa-solid fa-handshake-angle"></i><span>Volunteer</span></a>
+                <a href="#contact"><i class="fa-solid fa-paper-plane"></i><span>Contact</span></a>
+            </nav>
+        </header>
 
-<main>
+        <main id="top">
+            <section class="hero section reveal">
+                <div class="hero-copy">
+                    <p class="eyebrow">Software Developer</p>
 
-    <nav>
-        <ul>
-            <li><a href="#about" class="nav-link">About Me</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a>
-                <ul>
-                    <li><a href="https://comp2139-assignment2.azurewebsites.net/" class="nav-link">Travel Management System</a></li>
+                    <h1>
+                        Oleg Sanitskii
+                        <span class="wave" id="wave" aria-hidden="true">👋</span>
+                    </h1>
 
-                </ul>
-            </li>
-            <li><a href="#education" class="nav-link">Education</a>
-                <ul>
-                    <li><a href = "assets/img/blank.pdf">Dean's Honour List</a></li>
-                    <li><a href = "assets/img/AcademicTranscipt.pdf">Academic Transcript</a></li>
-                </ul>
-            </li>
-            <li><a href="#contact" class="nav-link">Contact Me</a>
-                <ul>
-                    <li><strong>Email:</strong> <a href="mailto:olegsanitskii@gmail.com">olegsanitskii@gmail.com</a></li>
-                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/oleg-sanitskii-6a21b02aa/">Oleg Sanitskii</a></li>
-                    <li><strong>GitHub:</strong> <a href="https://github.com/OlegSanitskii">Oleg Sanitskii</a></li>
-                </ul>
+                    <p class="hero-text">
+                        Specialize in Computer Programming &amp; Analysis. Software Engineer with full-stack experience building web applications,
+                        course projects, and cloud-deployed solutions. Strong interest in Mobile App Development, Web Development, databases,
+                        clean UI, and reliable backend logic.
+                    </p>
 
-            </li>
-        </ul>
-    </nav>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#work">View Projects</a>
+                        <a class="btn btn-secondary" href="resume.html">Resume</a>
+                        <a class="btn btn-secondary" href="cover-letter.html">Cover Letter</a>
+                    </div>
 
+                    <ul class="hero-meta">
+                        <li>Toronto, ON</li>
+                        <li>George Brown College</li>
+                        <li>Open to junior developer opportunities</li>
+                    </ul>
+                </div>
 
+                <div class="hero-card">
+                    <img src="assets/img/mypicture.jpg" alt="Oleg Sanitskii" style="max-width: 250px;">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Oleg Sanitskii, a Junior software developer with over 2 years of practical experience.
-            Based in Toronto, I specialize in full-stack development with a strong background in ASP.NET framework.
-            I'm committed to building responsive and efficient applications that improve user experience and solve real-world problems.</p>
-    </section>
+                    <div class="quick-facts">
+                        <div>
+                            <span class="fact-label">Focus</span>
+                            <strong>Full-Stack / Backend</strong>
+                        </div>
 
+                        <div>
+                            <span class="fact-label">Core Stack</span>
+                            <strong>Java, C#, Python, Kotlin, Swift, SQL, JavaScript</strong>
+                        </div>
 
+                        <div>
+                            <span class="fact-label">Profiles</span>
+                            <div class="social-links">
+                                <a href="https://github.com/OlegSanitskii" target="_blank" rel="noreferrer" class="social-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="custom-bullet">
-            <li><strong>Languages:</strong> C#, Python, Java, PHP, HTML, CSS, JavaScript</li>
-            <li><strong>Frameworks/Technologies:</strong> ASP.NET MVC</li>
-            <li><strong>Tools:</strong> Git, WebStorm, PhpStorm, IntelliJ IDEA, Visual studio 2022</li>
-            <li><strong>Databases:</strong> MySQL, SQLITE, Microsoft SQL Server</li>
-            <li><strong>Others:</strong> Agile methodologies</li>
-        </ul>
-    </section>
+                                <a href="https://www.linkedin.com/in/oleg-sanitskii-6a21b02aa/" target="_blank" rel="noreferrer" class="social-link">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>Travel Management System</h3>
+            <section class="section grid-two reveal" id="about">
+                <div>
+                    <p class="eyebrow">Personal Data</p>
+                    <h2 class="section-title-icon">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Bio</span>
+                    </h2>
+                    <p>
+                        I am a software development student and junior developer focused on practical, user-oriented
+                        solutions. My work so far has included database management, console / web / desktop / smartphone applications, booking systems, data
+                        science coursework, and DevOps practices. I enjoy turning requirements into structured,
+                        testable features and improving the clarity of the user experience.
+                    </p>
+                    <p>
+                        My goal is to grow into a dependable software engineer who can contribute across the full
+                        development lifecycle — from requirements analysis and design to implementation, deployment,
+                        and iteration.
+                    </p>
+                </div>
 
-        <p><a href="https://comp2139-assignment2.azurewebsites.net/">Would you like to take a look?</a></p>
+                <div class="panel soft-panel">
+                    <h3 class="card-title-icon">
+                        <i class="fa-solid fa-compass"></i>
+                        <span>Career Philosophy</span>
+                    </h3>
+                    <p>
+                        I believe good software should solve a real problem, be understandable to the next developer,
+                        and feel intuitive to the person using it. That means balancing technical correctness with
+                        usability, communication, and steady improvement.
+                    </p>
+                    <p>
+                        I am motivated by visible progress: learning new tools, applying them to real projects,
+                        and building a body of work that reflects discipline, curiosity, and professional growth.
+                    </p>
+                </div>
+            </section>
 
-        <p><strong>Description:</strong>
+            <section class="section reveal" id="skills">
+                <p class="eyebrow">Technical Profile</p>
+                <h2 class="section-title-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span>Skills &amp; Tools</span>
+                </h2>
 
-        <p> Interactive web application that mirrors the
-            functionality of renowned travel booking platforms like Expedia and Travelocity. Application allows users to search for various travel-related services, including
-            flights, hotels, and car rentals,  also incorporates a range of user-centric features. These features include user
-            authentication, personalized booking management, real-time search with filtering and sorting capabilities, and an
-            interactive user interface for seamless navigation and operation.
-        </p>
+                <div class="cards cards-4">
+                    <article class="card">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Languages</span>
+                        </h3>
+                        <p>C#, Java, Python, PHP, JavaScript, Swift, Kotlin, HTML, CSS</p>
+                    </article>
 
-        <ul class="custom-bullet-blue">
-            <li>- Implement a booking interface where users can select and confirm their bookings</li>
-            <li> - Provide a summary page or confirmation screen with all booking details.</li>
-            <li> - Allow guest users (non-registered) to make bookings.</li>
-            <li> - Users should be able to book flights, hotels, and car rentals</li>
-            <li> -  Include necessary details like dates, pricing, and confirmation.</li>
-            <li> - Allow guest users (non-registered/non-logged-in) to make bookings, with the
-                option to save their details for future use .</li>
+                    <article class="card">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>Frameworks</span>
+                        </h3>
+                        <p>ASP.NET MVC, ASP.NET Core Identity, JavaFX, Spring, Spring Boot</p>
+                    </article>
 
-        </ul>
+                    <article class="card">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-database"></i>
+                            <span>Databases</span>
+                        </h3>
+                        <p>MySQL, SQLite, MongoDB</p>
+                    </article>
 
+                    <article class="card">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-toolbox"></i>
+                            <span>Tools</span>
+                        </h3>
+                        <p>Git, Visual Studio, IntelliJ IDEA, Android Studio, Xcode, WebStorm, PhpStorm, Azure, AWS</p>
+                    </article>
+                </div>
+            </section>
 
-        <p><strong>Technologies used:</strong>
-        <ul class="custom-bullet">
-            <li>C#</li>
-            <li>ASP.NET Core Identity</li>
-            <li>ASP.NET Core Identity UI</li>
-            <li> Microsoft SQL Server database</li>
-            <li>Microsoft Azure</li>
-            <li>MailGun</li>
-        </ul>
+            <section class="section reveal" id="work">
+                <p class="eyebrow">Academic Work</p>
+                <h2 class="section-title-icon">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Projects</span>
+                </h2>
 
-        <br>
-        <br>
-        <br>
+                <div class="cards cards-2">
+                    <article class="project-card featured">
+                        <div class="project-topline">Featured Capstone Project</div>
 
-        <h3>Airline Booking System</h3>
-        <p><strong>Description:</strong>
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <span>SnapCal</span>
+                        </h3>
 
-        <p>Each flight has a flight number, source, destination, and flight fare.
-            Every passenger is identified by the first name, last name, and age.
-            Reservation contains flight and passenger information. It also contains the travel date.
-            It calculates the total fare payable based on the flight fare and taxes..</p>
+                        <div class="project-carousel" data-carousel>
+                            <button class="carousel-btn prev" type="button" aria-label="Previous image">&#10094;</button>
 
-            <ul class="custom-bullet-blue">
-                <li>- Accept travel related information.</li>
-                <li> - Store the travel related information.</li>
-                <li> - Display a ticket based on the travel reservation details.</li>
-            </ul>
+                            <div class="carousel-track">
+                                <img src="assets/img/snapcal-1.png" alt="SnapCal splash screen" class="carousel-image active lightbox-image">
+                                <img src="assets/img/snapcal-2.png" alt="SnapCal login screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/snapcal-3.png" alt="SnapCal create account screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/snapcal-4.png" alt="SnapCal dashboard screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/snapcal-5.png" alt="SnapCal scan product or receipt screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/snapcal-6.png" alt="SnapCal OCR recognized text screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/snapcal-7.png" alt="SnapCal Garmin recent access screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/snapcal-8.png" alt="SnapCal Garmin data and access screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/snapcal-9.png" alt="SnapCal progress summary screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/snapcal-10.png" alt="SnapCal meal list in progress screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/snapcal-11.png" alt="SnapCal edit meal modal" class="carousel-image lightbox-image">
+                                <img src="assets/img/snapcal-12.png" alt="SnapCal add meal manually screen" class="carousel-image lightbox-image">
+                            </div>
 
+                            <button class="carousel-btn next" type="button" aria-label="Next image">&#10095;</button>
+                        </div>
 
-        <p><strong>Technologies used:</strong>  Java, JavaFX </p>
+                        <p>
+                            Cross-platform nutrition and activity tracking concept designed for Android, iOS, and web, inspired by connected health ecosystems such as Garmin.
+                            SnapCal combines meal logging, OCR-based product scanning, Garmin/health data integration, progress tracking, and editable nutrition records in a unified user workflow.
+                        </p>
 
-    </section>
+                        <ul class="tags">
+                            <li>Kotlin</li>
+                            <li>Jetpack Compose</li>
+                            <li>Room</li>
+                            <li>ML Kit OCR</li>
+                            <li>Health Connect</li>
+                            <li>SaaS Concept</li>
+                        </ul>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Degree:</strong> <a href="https://www.georgebrown.ca/programs/computer-programming-and-analysis-program-online-t197">
-            Advanced Diploma – George Brown College</a></p>
+                        <div class="link-row">
+                            <a href="https://github.com/OlegSanitskii" target="_blank" rel="noreferrer">View Repository</a>
+                        </div>
+                    </article>
 
-            <ul class="custom-bullet">
-                <li>  Full-Stack Web Development</li>
-                <li>  Database Administration and Architecture</li>
-                <li>  IT and Networking</li>
-                <li>  Operating Systems</li>
-                <li>  Data Science and Machine Learning</li>
-                <li>  Mobile Application Development</li>
-            </ul>
+                    <article class="project-card">
+                        <div class="project-topline">Web Application</div>
 
-        <p><strong><a href = "assets/img/blank.pdf">Dean's Honour List</a></strong></p>
-        <p><strong><a href = "assets/img/AcademicTranscipt.pdf">Academic Transcript</a></strong></p>
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <span>Travel Management System</span>
+                        </h3>
 
+                        <div class="project-carousel" data-carousel>
+                            <button class="carousel-btn prev" type="button" aria-label="Previous image">&#10094;</button>
 
-    </section>
-</main>
+                            <div class="carousel-track">
+                                <img src="assets/img/travel-system/home.png" alt="Travel system homepage" class="carousel-image active lightbox-image">
+                                <img src="assets/img/travel-system/hotels.png" alt="Travel system hotel search results" class="carousel-image lightbox-image">
+                                <img src="assets/img/travel-system/flights-list.png" alt="Travel system flight listing page" class="carousel-image lightbox-image">
+                                <img src="assets/img/travel-system/car-list.png" alt="Travel system car rental list" class="carousel-image lightbox-image">
+                                <img src="assets/img/travel-system/car-details-1.png" alt="Travel system car details page" class="carousel-image lightbox-image">
+                                <img src="assets/img/travel-system/login.png" alt="Travel system login page" class="carousel-image lightbox-image">
+                                <img src="assets/img/travel-system/register.png" alt="Travel system register page" class="carousel-image lightbox-image">
+                            </div>
 
+                            <button class="carousel-btn next" type="button" aria-label="Next image">&#10095;</button>
+                        </div>
 
+                        <p>
+                            Full-stack travel booking web application built with ASP.NET Core MVC for browsing hotels, flights, and car rentals.
+                            The system includes authentication with ASP.NET Identity, database-backed listings with Entity Framework Core and SQL Server,
+                            and a multi-step reservation flow across different travel services.
+                        </p>
 
-<footer>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to contact me through:</p>
+                        <ul class="tags">
+                            <li>C#</li>
+                            <li>ASP.NET Core MVC</li>
+                            <li>Identity</li>
+                            <li>Entity Framework Core</li>
+                            <li>SQL Server</li>
+                        </ul>
 
-        <br>
-        <br>
-        <br>
+                        <div class="link-row">
+                            <a href="https://github.com/OlegSanitskii/COMP2129_Assignment_2" target="_blank" rel="noreferrer">View Repository</a>
+                        </div>
+                    </article>
 
-        <ul class="custom-bullet">
-            <li><strong>Email:</strong> <a href="mailto:olegsanitskii@gmail.com">olegsanitskii@gmail.com</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/oleg-sanitskii-6a21b02aa/">Oleg Sanitskii</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/OlegSanitskii">Oleg Sanitskii</a></li>
-        </ul>
-    </section>
-</footer>
+                    <article class="project-card">
+                        <div class="project-topline">Swift Mobile App</div>
+                        <h3 class="card-title-icon">
+                            <i class="fa-brands fa-swift"></i>
+                            <span>Prime Numbers Game</span>
+                        </h3>
 
-<button id="scrollTopBtn" onclick="scrollTopFunction()">Return to Top</button>
+                        <div class="project-carousel" data-carousel>
+                            <button class="carousel-btn prev" type="button" aria-label="Previous image">&#10094;</button>
 
-<script>
-    function scrollTopFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+                            <div class="carousel-track">
+                                <img src="assets/img/swift-prime-1.png" alt="Swift Prime Numbers Game main menu" class="carousel-image active lightbox-image">
+                                <img src="assets/img/swift-prime-2.png" alt="Swift Prime Numbers Game countdown screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/swift-prime-3.png" alt="Swift Prime Numbers Game gameplay screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/swift-prime-4.png" alt="Swift Prime Numbers Game summary screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/swift-prime-5.png" alt="Swift Prime Numbers Game summary bottom panel screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/swift-prime-6.png" alt="Swift Prime Numbers Game statistics screen" class="carousel-image lightbox-image">
+                                <img src="assets/img/swift-prime-7.png" alt="Swift Prime Numbers Game saved summary screen" class="carousel-image lightbox-image">
+                            </div>
 
-    let mybutton = document.getElementById("scrollTopBtn");
+                            <button class="carousel-btn next" type="button" aria-label="Next image">&#10095;</button>
+                        </div>
 
-    window.onscroll = function() {scrollFunction()};
+                        <p>
+                            iOS mini-game built with SwiftUI where the player must quickly decide whether a number is prime or not before the timer runs out.
+                            The app includes a countdown screen, live gameplay with score tracking, detailed per-attempt explanations, saved game summaries,
+                            and cumulative statistics across multiple sessions.
+                        </p>
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
+                        <ul class="tags">
+                            <li>Swift</li>
+                            <li>SwiftUI</li>
+                            <li>NavigationStack</li>
+                            <li>Timers</li>
+                            <li>State Management</li>
+                        </ul>
+
+                        <div class="link-row">
+                            <a href="https://github.com/OlegSanitskii/Lab1_Oleg_Sanitskii" target="_blank" rel="noreferrer">View Repository</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-topline">Java Desktop Application</div>
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-ticket"></i>
+                            <span>Airline Booking System</span>
+                        </h3>
+
+                        <div class="project-carousel" data-carousel>
+                            <button class="carousel-btn prev" type="button" aria-label="Previous image">&#10094;</button>
+
+                            <div class="carousel-track">
+                                <img src="assets/img/airline-system/main.png" alt="Airline Booking System main window" class="carousel-image active lightbox-image">
+                                <img src="assets/img/airline-system/add-passenger.png" alt="Airline Booking System add passenger form" class="carousel-image lightbox-image">
+                                <img src="assets/img/airline-system/display-passengers.png" alt="Airline Booking System passenger list" class="carousel-image lightbox-image">
+                                <img src="assets/img/airline-system/book-flight.png" alt="Airline Booking System book flight dialog" class="carousel-image lightbox-image">
+                                <img src="assets/img/airline-system/booking-success.png" alt="Airline Booking System booking success message" class="carousel-image lightbox-image">
+                                <img src="assets/img/airline-system/print-ticket.jpg" alt="Airline Booking System print ticket" class="carousel-image lightbox-image">
+                                <img src="assets/img/airline-system/ticket-details.jpg" alt="Airline Booking System ticket details" class="carousel-image lightbox-image">
+                                <img src="assets/img/airline-system/last-7-days.png" alt="Airline Booking System passengers booked in last 7 days" class="carousel-image lightbox-image">
+                                <img src="assets/img/airline-system/cancel-flight.png" alt="Airline Booking System cancel flight dialog" class="carousel-image lightbox-image">
+                                <img src="assets/img/airline-system/cancellation-success.png" alt="Airline Booking System cancellation success message" class="carousel-image lightbox-image">
+                            </div>
+
+                            <button class="carousel-btn next" type="button" aria-label="Next image">&#10095;</button>
+                        </div>
+
+                        <p>
+                            Java desktop booking application focused on passenger registration, booking and cancellation workflows,
+                            fare handling, and recent booking history. The interface supports adding passengers, displaying passenger
+                            records, booking flights, cancelling reservations, and reviewing tickets purchased within the last 7 days.
+                        </p>
+
+                        <ul class="tags">
+                            <li>Java</li>
+                            <li>JavaFX</li>
+                            <li>OOP</li>
+                            <li>Desktop UI</li>
+                            <li>Booking Workflow</li>
+                        </ul>
+
+                        <div class="link-row">
+                            <a href="https://github.com/OlegSanitskii/projectBasedOnCsharpFlightManagmentSystem" target="_blank" rel="noreferrer">View Repository</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section reveal" id="capstone">
+                <p class="eyebrow">Featured Project Structure</p>
+                <h2 class="section-title-icon">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span>Project Breakdown</span>
+                </h2>
+
+                <p class="section-intro">
+                    SnapCal is positioned as my featured capstone project. The current release focuses on an Android MVP,
+                    while the long-term product direction expands toward a broader cross-platform service with future iOS
+                    and web support.
+                </p>
+
+                <div class="capstone-grid">
+                    <article class="capstone-item">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>Project Summary</span>
+                        </h3>
+                        <p>
+                            SnapCal is a mobile-first nutrition and activity tracking system that combines OCR-based food
+                            logging with imported health and workout data. The current implementation focuses on an
+                            Android MVP, while the system is designed to support future iOS and web expansion as part of a
+                            connected SaaS-style ecosystem.
+                        </p>
+                    </article>
+
+                    <article class="capstone-item">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <span>Project Vision</span>
+                        </h3>
+                        <p>
+                            To create a unified health tracking ecosystem where users can connect nutrition and physical
+                            activity data, reduce manual logging, and receive clear insights into calorie balance,
+                            macro intake, and progress over time.
+                        </p>
+                    </article>
+
+                    <article class="capstone-item">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span>Business / Project Requirements</span>
+                        </h3>
+                        <ul class="check-list compact-list">
+                            <li>Capture nutrition data from product labels using OCR.</li>
+                            <li>Import activity data such as workouts, calories, and steps via Garmin / Health Connect.</li>
+                            <li>Store nutrition and activity records locally for offline access.</li>
+                            <li>Generate weekly reports with intake vs burn analysis and export options.</li>
+                            <li>Provide manual correction and manual meal entry as fallback workflows.</li>
+                        </ul>
+                    </article>
+
+                    <article class="capstone-item">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span>Project Plan</span>
+                        </h3>
+                        <ul class="check-list compact-list">
+                            <li>Implement OCR capture and parsing for nutrition labels.</li>
+                            <li>Integrate Garmin / Health Connect activity data.</li>
+                            <li>Build local persistence and reporting features.</li>
+                            <li>Refine UI/UX and test on modern Android versions.</li>
+                            <li>Prepare documentation, status reporting, and final MVP presentation.</li>
+                        </ul>
+                    </article>
+
+                    <article class="capstone-item">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-drafting-compass"></i>
+                            <span>Requirements Analysis &amp; Design</span>
+                        </h3>
+                        <p>
+                            The core system revolves around entities such as User, Meal, Activity, and Report. The product
+                            flow supports authentication, OCR-based scanning, manual food entry, progress dashboards, and
+                            connected health data import. The architecture is intentionally separated into UI, processing,
+                            and storage layers to support future platform growth.
+                        </p>
+                    </article>
+
+                    <article class="capstone-item">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                            <span>Wireframes / Mockups</span>
+                        </h3>
+
+                        <div class="mockup-preview-grid">
+                            <img src="assets/img/snapcal-login.png" alt="SnapCal login screen preview" class="lightbox-image">
+                            <img src="assets/img/snapcal-dashboard.png" alt="SnapCal dashboard preview" class="lightbox-image">
+                            <img src="assets/img/snapcal-scan.png" alt="SnapCal scan screen preview" class="lightbox-image">
+                        </div>
+
+                        <div class="doc-actions">
+                            <a href="https://www.figma.com/design/eeKs50VQDdo6otRQbSca7e/ProjectMock?node-id=0-1&p=f&t=80Ff0O1HiBEk1nZy-0" target="_blank" rel="noreferrer">
+                                <i class="fa-solid fa-up-right-from-square"></i> Open Figma Prototype
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="capstone-item status-item">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Status Reports</span>
+                        </h3>
+
+                        <div class="doc-stack">
+                            <div class="doc-link-card">
+                                <strong>Status Report I</strong>
+                                <p>Development progress, current blockers, upcoming tasks, and milestone targets.</p>
+                                <a href="assets/docs/W25_T16_Status_Report_1.docx" download>
+                                    <i class="fa-solid fa-download"></i> Download DOCX
+                                </a>
+                            </div>
+
+                            <div class="doc-link-card">
+                                <strong>Project Plan</strong>
+                                <p>Scope, deliverables, risks, assumptions, milestones, and sprint timeline.</p>
+                                <a href="assets/docs/W25_T16_Project_Plan_v2.0.docx" download>
+                                    <i class="fa-solid fa-download"></i> Download DOCX
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="capstone-item">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-gears"></i>
+                            <span>System Implementation</span>
+                        </h3>
+                        <p>
+                            The current MVP is implemented as an Android application built around Kotlin-based mobile
+                            development, OCR-driven nutrition scanning, local persistence, and Health Connect integration.
+                            The design also anticipates future service expansion toward iOS and web clients.
+                        </p>
+
+                        <ul class="tags">
+                            <li>Kotlin</li>
+                            <li>Jetpack Compose</li>
+                            <li>Room</li>
+                            <li>ML Kit OCR</li>
+                            <li>Health Connect</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="capstone-documents">
+                    <h3 class="card-title-icon">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Project Documents</span>
+                    </h3>
+
+                    <div class="doc-grid">
+                        <div class="doc-card">
+                            <h4>Project Summary</h4>
+                            <p>High-level overview of the SnapCal concept and problem framing.</p>
+                            <div class="doc-actions">
+                                <a href="assets/docs/COMP3059-F25-T11-Project-Summary.docx" download>
+                                    <i class="fa-solid fa-download"></i> Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="doc-card">
+                            <h4>Project Vision</h4>
+                            <p>Product vision, positioning, and feature direction.</p>
+                            <div class="doc-actions">
+                                <a href="assets/docs/COMP3059-F25-T11-Project-Vision.docx" download>
+                                    <i class="fa-solid fa-download"></i> Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="doc-card">
+                            <h4>High-Level Requirements</h4>
+                            <p>Core business requirements and system scope.</p>
+                            <div class="doc-actions">
+                                <a href="assets/docs/COMP3059-F25-T11-High-Level-Requirements.doc" download>
+                                    <i class="fa-solid fa-download"></i> Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="doc-card">
+                            <h4>Personas &amp; User Stories</h4>
+                            <p>User profiles and interaction scenarios.</p>
+                            <div class="doc-actions">
+                                <a href="assets/docs/COMP3059-F25_T11_Personas_and_UserStories.docx" download>
+                                    <i class="fa-solid fa-download"></i> Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="doc-card">
+                            <h4>Project Plan</h4>
+                            <p>Milestones, risks, and delivery structure.</p>
+                            <div class="doc-actions">
+                                <a href="assets/docs/W25_T16_Project_Plan_v2.0.docx" download>
+                                    <i class="fa-solid fa-download"></i> Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="doc-card">
+                            <h4>Status Report I</h4>
+                            <p>Progress tracking and sprint updates.</p>
+                            <div class="doc-actions">
+                                <a href="assets/docs/W25_T16_Status_Report_1.docx" download>
+                                    <i class="fa-solid fa-download"></i> Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section grid-two reveal" id="credentials">
+                <div>
+                    <p class="eyebrow">Academic Credentials</p>
+                    <h2 class="section-title-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </h2>
+
+                    <p>
+                        <strong>Advanced Diploma — Computer Programming and Analysis</strong><br>
+                        George Brown College
+                    </p>
+
+                    <p>2022 - 2026</p>
+
+                    <ul class="check-list">
+                        <li>Full-Stack Web Development</li>
+                        <li>Database Administration and Architecture</li>
+                        <li>Operating Systems and Networking</li>
+                        <li>Applied Data Science and Machine Learning</li>
+                        <li>Mobile Application Development</li>
+                    </ul>
+                </div>
+
+                <div class="panel">
+                    <h3 class="card-title-icon">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Supporting Documents</span>
+                    </h3>
+                    <div class="doc-list">
+                        <a href="assets/docs/AcademicTranscript.pdf" target="_blank" rel="noreferrer">Academic Transcript</a>
+                        <a href="assets/docs/DeansHonourList.pdf" target="_blank" rel="noreferrer">Dean's Honour List</a>
+                        <a href="resume.html">Resume Page</a>
+                        <a href="cover-letter.html">Cover Letter</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section grid-two reveal" id="references">
+                <div>
+                    <p class="eyebrow">Professional Summary</p>
+                    <h2 class="section-title-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Internship Experience &amp; Professional Readiness</span>
+                    </h2>
+
+                    <div class="panel" style="margin-top: 18px;">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-building"></i>
+                            <span>Software Engineer Intern — Informatica</span>
+                        </h3>
+
+                        <h4>Sep 2024 - Dec 2024 · 4 mos</h4>
+                        <h4>Toronto, Ontario, Canada · Hybrid</h4>
+
+                        <p>
+                            I completed an internship at <strong>Informatica</strong>, where I worked in a professional software
+                            engineering environment and collaborated with experienced developers, technical leads, and managers.
+                            This experience gave me exposure to real development workflows, team communication, and engineering
+                            expectations in an enterprise setting.
+                        </p>
+
+                        <p>
+                            During the internship, I contributed in a team environment, gained experience working with professional
+                            development processes, and strengthened my understanding of software delivery, collaboration, and
+                            practical engineering standards.
+                        </p>
+                    </div>
+
+                    <div class="panel soft-panel" style="margin-top: 18px;">
+                        <h3 class="card-title-icon">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Professional Note</span>
+                        </h3>
+
+                        <p>
+                            The references listed on this page are people I worked with professionally during my internship.
+                            To respect privacy and avoid publishing personal contact details, full reference information is
+                            available upon request.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3 class="card-title-icon">
+                        <i class="fa-solid fa-address-book"></i>
+                        <span>Professional References</span>
+                    </h3>
+                    <h4>Full contact details available upon request.</h4>
+
+                    <div class="reference-list">
+                        <div class="reference-item">
+                            <h4>Yrii Sokolovskii</h4>
+                            <p class="reference-role">Lead Manager, Software Engineer, Architect</p>
+                            <p class="reference-note">
+                                “Oleg demonstrated strong professionalism and a willingness to learn quickly
+                                in a team environment. He showed good communication skills, responded well to feedback, and consistently
+                                approached tasks with a thoughtful and structured mindset.”
+                            </p>
+                        </div>
+
+                        <div class="reference-item">
+                            <h4>Dmitrii Sokolov</h4>
+                            <p class="reference-role">Team Lead, Manager</p>
+                            <p class="reference-note">
+                                “During his time working with the team, Oleg showed reliability and a
+                                positive attitude toward development tasks. He was attentive to details, open to guidance, and capable
+                                of integrating feedback into his work effectively.”
+                            </p>
+                        </div>
+
+                        <div class="reference-item">
+                            <h4>Faisal Jamil</h4>
+                            <p class="reference-role">Senior Java Developer / Software Engineer</p>
+                            <p class="reference-note">
+                                “Oleg demonstrated a solid understanding of development fundamentals and a
+                                genuine interest in improving his technical skills. He worked well within a team and showed consistency
+                                in completing assigned tasks.”
+                            </p>
+                        </div>
+
+                        <div class="reference-item">
+                            <h4>Sahil Soni</h4>
+                            <p class="reference-role">Senior Java Developer / Software Engineer</p>
+                            <p class="reference-note">
+                                “Oleg approached development tasks with focus and curiosity. He was engaged
+                                in learning new concepts and showed the ability to follow established development processes in a
+                                professional environment.”
+                            </p>
+                        </div>
+
+                        <div class="reference-item">
+                            <h4>Cristoper Meli</h4>
+                            <p class="reference-role">Senior DevOps Engineer</p>
+                            <p class="reference-note">
+                                “Oleg showed an understanding of working within a structured engineering
+                                environment and demonstrated a willingness to learn about deployment workflows and DevOps practices.
+                                He was collaborative and maintained a professional attitude throughout his work.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section reveal" id="volunteer">
+                <p class="eyebrow">Additional Experience</p>
+                <h2 class="section-title-icon">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <span>Volunteer Experience</span>
+                </h2>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3>Multisport Canada — Event Volunteer</h3>
+
+                        <p class="project-topline">
+                            Triathlon Event Support · Ontario, Canada
+                        </p>
+
+                        <p>
+                            Supported the organization of a large-scale triathlon event by assisting with participant registration,
+                            equipment setup, and on-site logistics. Worked in a fast-paced environment, coordinating with team members
+                            to ensure smooth event operations and a positive participant experience.
+                        </p>
+
+                        <p>
+                            This experience strengthened my ability to work under pressure, communicate effectively, and contribute
+                            to team-based workflows in real-world scenarios.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer reveal" id="contact">
+            <div>
+                <p class="eyebrow">Contact</p>
+                <h2 class="section-title-icon">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Let’s connect</span>
+                </h2>
+                <p>I’m open to junior developer roles, internships, and collaborative projects.</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:olegsanitskii@gmail.com" class="contact-link-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>olegsanitskii@gmail.com</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/oleg-sanitskii-6a21b02aa/" target="_blank" rel="noreferrer" class="contact-link-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/OlegSanitskii" target="_blank" rel="noreferrer" class="contact-link-icon">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+
+            <p class="footer-note">© <span id="year"></span> Oleg Sanitskii.</p>
+        </footer>
+    </div>
+
+    <button id="scrollTopBtn" aria-label="Return to top" title="Return to top">↑ Top</button>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+        <img src="" alt="Expanded project screenshot" class="lightbox-content" id="lightboxImage">
+    </div>
+
+    <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const siteNav = document.querySelector(".site-nav");
+
+        if (navToggle && siteNav) {
+            navToggle.addEventListener("click", () => {
+                const isOpen = siteNav.classList.toggle("open");
+                navToggle.setAttribute("aria-expanded", String(isOpen));
+            });
+
+            siteNav.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    siteNav.classList.remove("open");
+                    navToggle.setAttribute("aria-expanded", "false");
+                });
+            });
         }
-    }
 
+        const yearEl = document.getElementById("year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
 
+        const wave = document.getElementById("wave");
 
+        function playWave() {
+            if (!wave) return;
+            wave.classList.remove("wave-animate");
+            void wave.offsetWidth;
+            wave.classList.add("wave-animate");
+        }
 
-    window.addEventListener('scroll', () => {
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('nav ul li a');
+        window.addEventListener("load", () => {
+            setTimeout(playWave, 350);
+        });
 
-        sections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            const id = section.getAttribute('id');
+        if (wave) {
+            wave.addEventListener("mouseenter", playWave);
+            wave.addEventListener("click", playWave);
+        }
 
-            if (rect.top <= 50 && rect.bottom >= 50) {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${id}`) {
-                        link.classList.add('active');
-                    }
+        const revealItems = document.querySelectorAll(".reveal");
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealItems.forEach(item => revealObserver.observe(item));
+
+        document.addEventListener("mousemove", (event) => {
+            const x = (event.clientX / window.innerWidth) * 100;
+            const y = (event.clientY / window.innerHeight) * 100;
+            document.body.style.setProperty("--mouse-x", x + "%");
+            document.body.style.setProperty("--mouse-y", y + "%");
+        });
+
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        function toggleScrollTopButton() {
+            if (!scrollTopBtn) return;
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        }
+
+        if (scrollTopBtn) {
+            scrollTopBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        }
+
+        window.addEventListener("scroll", toggleScrollTopButton);
+        window.addEventListener("load", toggleScrollTopButton);
+
+        document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+            const images = carousel.querySelectorAll(".carousel-image");
+            const prevBtn = carousel.querySelector(".carousel-btn.prev");
+            const nextBtn = carousel.querySelector(".carousel-btn.next");
+
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                images.forEach((img, i) => {
+                    img.classList.toggle("active", i === index);
                 });
             }
+
+            if (prevBtn && nextBtn && images.length > 0) {
+                prevBtn.addEventListener("click", () => {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    showSlide(currentIndex);
+                });
+
+                nextBtn.addEventListener("click", () => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showSlide(currentIndex);
+                });
+
+                showSlide(currentIndex);
+            }
         });
-    });
 
-</script>
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightboxImage");
+        const lightboxClose = document.getElementById("lightboxClose");
 
+        document.querySelectorAll(".lightbox-image").forEach((image) => {
+            image.addEventListener("click", () => {
+                if (!lightbox || !lightboxImage) return;
+
+                lightboxImage.src = image.src;
+                lightboxImage.alt = image.alt;
+                lightbox.classList.add("open");
+                lightbox.setAttribute("aria-hidden", "false");
+                document.body.style.overflow = "hidden";
+            });
+        });
+
+        function closeLightbox() {
+            if (!lightbox || !lightboxImage) return;
+
+            lightbox.classList.remove("open");
+            lightbox.setAttribute("aria-hidden", "true");
+            lightboxImage.src = "";
+            document.body.style.overflow = "";
+        }
+
+        if (lightboxClose) {
+            lightboxClose.addEventListener("click", closeLightbox);
+        }
+
+        if (lightbox) {
+            lightbox.addEventListener("click", (event) => {
+                if (event.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+        }
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && lightbox && lightbox.classList.contains("open")) {
+                closeLightbox();
+            }
+        });
+    </script>
 </body>
 </html>
-
-
